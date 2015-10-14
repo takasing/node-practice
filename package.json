@@ -1,0 +1,23 @@
+{
+  "name": "node-practice",
+  "version": "0.0.0",
+  "description": "node.js code to practice",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^1.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/takasing/node-practice.git"
+  },
+  "author": "takasing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/takasing/node-practice/issues"
+  },
+  "homepage": "https://github.com/takasing/node-practice"
+}
