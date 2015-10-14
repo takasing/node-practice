@@ -1,7 +1,6 @@
 var Async = require('./src/async');
 
 console.log("start");
-var Async = new Async("hoge");
-console.log(Async.toString());
+var Async = new Async();
 Async.asyncTest();
 console.log("finished");

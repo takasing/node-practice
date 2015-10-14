@@ -1,10 +1,6 @@
 var async = require('async');
 
 var Async = function(name) {
-  this.name = name;
-  this.toString = function() {
-    return "name : " + this.name + ".";
-  }
   this.asyncTest = function() {
     async.waterfall([
       function(callback) {
@@ -12,8 +8,10 @@ var Async = function(name) {
         callback(null, "hoge");
       },
       function(arg1, callback) {
-        console.log("--second");
-        callback(null, arg1, "fuga");
+        setTimeout(function() {
+          console.log("--second");
+          callback(null, arg1, "fuga");
+        }, 200);
       },
       function(arg1, arg2, callback) {
         console.log("--third");
